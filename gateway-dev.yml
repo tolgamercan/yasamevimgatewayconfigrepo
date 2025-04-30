@@ -9,7 +9,7 @@ spring:
           issuer-uri: http://keycloak:8080/realms/myrealm
   data:
     redis:
-      host: localhost
+      host: redis
       port: 6379
 
 server:
