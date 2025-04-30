@@ -10,4 +10,4 @@ spring:
           default-label: master
           clone-on-start: true
     profiles:
-      active: dev
+      active: tolga
