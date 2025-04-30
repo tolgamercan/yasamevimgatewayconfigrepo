@@ -11,8 +11,3 @@ spring:
           clone-on-start: true
     profiles:
       active: dev
-
-logging:
-  level:
-    root: WARN
-    org.eclipse.jgit: DEBUG
