@@ -1,1 +1,9 @@
+server:
+  port: 1408
 
+spring:
+  data:
+    mongodb:
+      host: mongodb
+      port: 27017
+      database: gatewaydb
