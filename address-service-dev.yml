@@ -1,4 +1,10 @@
 spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server  # Eureka’daki adı
+      profile: dev
   application:
     name: address-service
   datasource:
