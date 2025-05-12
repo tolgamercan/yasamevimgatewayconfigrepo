@@ -1,6 +1,6 @@
 spring:
   application:
-    name: address-servic
+    name: address-service
   datasource:
     url: jdbc:postgresql://postgres:5432/addressdb
     username: postgres
