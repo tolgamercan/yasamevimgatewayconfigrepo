@@ -1,10 +1,4 @@
 spring:
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: config-server  # Eureka’daki adı
-      profile: dev
   application:
     name: address-service
   datasource:
@@ -15,11 +9,5 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://discovery-service:8761/eureka/
 server:
   port: 1410
