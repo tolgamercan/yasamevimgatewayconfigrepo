@@ -17,12 +17,5 @@ spring:
       host: redis
       port: 6379
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://discovery-service:8761/eureka/
-
 server:
   port: 8888
