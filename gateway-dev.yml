@@ -1,25 +1,28 @@
 spring:
   application:
     name: gateway
+
+  cloud:
+    gateway:
+      routes: [] # Mongo'dan okunacak
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://keycloak:8080/realms/myrealm
+
+  data:
+    redis:
+      host: redis
+      port: 6379
+
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://discovery-service:8761/eureka/
-  cloud:
-    gateway:
-      routes: [] # Mongo'dan okunacak
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://keycloak:8080/realms/myrealm
-  data:
-    redis:
-      host: redis
-      port: 6379
 
 server:
   port: 8888
-
