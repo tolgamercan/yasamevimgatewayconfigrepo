@@ -2,6 +2,8 @@ server:
   port: 1400
 
 spring:
+  main:
+    allow-bean-definition-overriding: true # Önemli!
   application:
     name: route-management-service
   data:
@@ -9,3 +11,11 @@ spring:
       host: mongodb
       port: 27017
       database: gatewaydb
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
