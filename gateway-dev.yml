@@ -3,7 +3,14 @@ spring:
     allow-bean-definition-overriding: true # Önemli!
   application:
     name: gateway
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
   cloud:
     gateway:
       routes: [] # Mongo'dan okunacak
