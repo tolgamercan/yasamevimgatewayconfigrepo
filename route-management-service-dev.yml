@@ -2,8 +2,6 @@ server:
   port: 1400
 
 spring:
-  main:
-    allow-bean-definition-overriding: true # Önemli!
   application:
     name: route-management-service
   data:
